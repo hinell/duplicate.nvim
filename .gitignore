@@ -1,0 +1,18 @@
+# general
+test*,
+test/*,
+build/,
+dist/,
+.build/,
+.dist/
+out/
+.out/
+dist/
+.dist/
+.git/
+# node.js
+node_modules/
+# scaffold tooling
+.scaffoldrc
+
+doc/duplicate-demo.mov
