@@ -1,9 +1,13 @@
+:LineDuplicate	duplicate.txt	/*:LineDuplicate*
+:VisualDuplicate	duplicate.txt	/*:VisualDuplicate*
 duplicate--configuration	duplicate.txt	/*duplicate--configuration*
 duplicate-api	duplicate.txt	/*duplicate-api*
+duplicate-commands	duplicate.txt	/*duplicate-commands*
 duplicate-examples	duplicate.txt	/*duplicate-examples*
 duplicate-install	duplicate.txt	/*duplicate-install*
 duplicate-keybindings	duplicate.txt	/*duplicate-keybindings*
 duplicate-legendary	duplicate.txt	/*duplicate-legendary*
 duplicate-overview	duplicate.txt	/*duplicate-overview*
 duplicate-table-of-contents	duplicate.txt	/*duplicate-table-of-contents*
+duplicate-update	duplicate.txt	/*duplicate-update*
 duplicate.txt	duplicate.txt	/*duplicate.txt*

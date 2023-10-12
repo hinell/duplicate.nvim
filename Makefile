@@ -1,5 +1,5 @@
 NVIM=nvim
-PROJECT_NAME="duplicate"
+PROJECT_NAME=duplicate
 
 all: doc/tags
 
@@ -8,9 +8,10 @@ doc/tags: doc/$(PROJECT_NAME).txt
 	@$(NVIM) --headless -c "helptags doc/" -c "exit"
 
 # ts-vimdoc generate vimhelp from markdown 
+.SILENT:
 .ONESHELL:
-doc/$(PROJECT_NAME).txt: README.md
-	@$(NVIM) --headless -Es -c "
+doc/$(PROJECT_NAME).txt: doc/index.md
+	$(NVIM) --headless -E -c "
 		lua require('ts-vimdoc').docgen({
 			input_file='doc/index.md',
 			output_file = '$@',
@@ -18,8 +19,12 @@ doc/$(PROJECT_NAME).txt: README.md
 		})
 		os.exit()
 	"
-	@command -v unicode-emoji-remove.sh &> /dev/null || {
-		# Use 2> error.log to read the output of the command
-		echo -e "$0: $(tput setaf 1)error:$(tput op) unicode-emoji-remove.sh is nout found; install it from @gtihub:hinell/dotfiles" > /dev/stderr;
+	command -v unicode-emoji-remove.sh &> /dev/null || {
+		# Use 2> error.log to read the output of the command 
+		echo -e "$0: $(tput setaf 1)error:$(tput op) unicode-emoji-remove.sh is nout found; install it from" \
+				"https://github.com/hinell/dotfiles/blob/main/bash-scripts/unicode-emoji-remove.sh" \
+		> /dev/stderr;
 	}
-	@unicode-emoji-remove.sh -i $@
+	test -f $< && unicode-emoji-remove.sh -i $@
+	# strip <br> tags
+	sed -i -E -e 's/<\/?br\/?>\s*/\n/g' $@

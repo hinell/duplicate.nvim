@@ -1,8 +1,9 @@
-https://github.com/hinell/duplicate.nvim/assets/8136158/d136146f-fb84-4a66-9a04-6152e49d411a
-
 <div align="center">
   <h1 align="center">🔌  duplicate.nvim</h2>
 </div>
+
+https://github.com/hinell/duplicate.nvim/assets/8136158/d136146f-fb84-4a66-9a04-6152e49d411a
+
 
 <!-- Use badges from https://shields.io/badges/ -->
 [![PayPal](https://img.shields.io/badge/-PayPal-880088?style=flat-square&logo=pay&logoColor=white&label=DONATE)](https://www.paypal.me/biteofpie)

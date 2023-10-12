@@ -1,0 +1,3 @@
+* refactor(commands): rename LinesDuplicate -> VisualDuplicate
+* fix(commands): offset wasn't taken into account by user commands
+* feat(selection): put cursor inside selection depending on duplication direction 
