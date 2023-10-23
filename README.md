@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">🔌  duplicate.nvim</h2>
+  <h1 align="center">duplicate.nvim<img width="32" src="https://neovim.io/logos/neovim-mark-flat.png" align="right" /></h1>
 </div>
 
 https://github.com/hinell/duplicate.nvim/assets/8136158/d136146f-fb84-4a66-9a04-6152e49d411a
